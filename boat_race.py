@@ -56,7 +56,11 @@ class Boat:
 
         self.distance = distance
         
-        Boat.total_boats +=1 
+        self.add_boat_count()
+
+    @classmethod
+    def add_boat_count(cls):
+        cls.total_boats += 1
 
     @property
     def img(self):
